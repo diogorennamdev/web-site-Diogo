@@ -9,10 +9,10 @@
 body {
     background-color: #22212C;
 }
-img{
+#fotoDiogo{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 128px;
+    height: 128px;
     border: 2px solid #00FF00;
     margin-bottom: 20px;
     margin-top: 32px;
@@ -37,9 +37,7 @@ img{
     font-style: normal;
     color: #837E9F;
     font-weight: 700;
-    font-size: 23px;
-    
-    
+    font-size: 23px;   
 } 
 .container-header h2{
     font-family: 'Merriweather Sans';
@@ -49,3 +47,40 @@ img{
     font-size: 13px;
     
 } 
+
+.container-endereco-redessocias{
+    position:absolute;
+    margin-top: 40px;
+    background: #302F3D;
+    width: 348px;
+    height: 348px;
+    border-radius: 20px;
+    margin-left: 40px;
+   
+}
+.img-container-endereco-redessocias{
+    position:absolute;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: #837E9F;
+}
+
+
+a{
+    display: block;
+    color: #837E9F;
+    text-decoration: none;
+    margin-top: 37px;
+    margin-left: 84px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+   
+
+}
+
+
+
+
