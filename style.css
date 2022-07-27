@@ -1,15 +1,17 @@
 /*==========GERAL=========*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0%;
-    margin:0;
+    margin: 0;
 }
 
 body {
     background-color: #22212C;
 }
-#fotoDiogo{
+
+#fotoDiogo {
     border-radius: 50%;
     width: 128px;
     height: 128px;
@@ -20,8 +22,8 @@ body {
 
 /*===============CONTAINER CABEÇARIO==========*/
 .container-header {
-    
-    position: relative;
+
+    display: block;
     margin-top: 40px;
     background: #302F3D;
     width: 348px;
@@ -31,56 +33,103 @@ body {
     border-radius: 20px;
     margin-left: 40px;
 }
-.container-header h1{
-   
+
+.container-header h1 {
+
     font-family: 'Merriweather Sans';
     font-style: normal;
     color: #837E9F;
     font-weight: 700;
-    font-size: 23px;   
-} 
-.container-header h2{
+    font-size: 23px;
+}
+
+.container-header h2 {
     font-family: 'Merriweather Sans';
     font-style: normal;
     color: #837E9F;
     font-weight: 300;
     font-size: 13px;
-    
-} 
 
-.container-endereco-redessocias{
-    position:absolute;
+}
+
+/*==============CONTAINER-REDES-SOCIAS-ENDEREÇO======*/
+.container-endereco-socials {
+    display: flex;
+    margin-top: 40px;
+    background: #302F3D;
+    width: 348px;
+    height: 330px;
+    border-radius: 20px;
+    margin-left: 40px;
+
+}
+
+.container-endereco-socials-intems {
+    margin: 40px 70px;
+
+}
+
+.container-endereco-socials-intems-intem {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin-bottom: 28px;
+    
+}
+.container-edereco-socials-icon {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 40px;
+    
+
+}
+.container-edereco-socials-icon i{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31.6px;
+    margin-left: 15px;
+    color: #837E9F;
+}
+.container-endereco-socials-intems-intem a {
+    text-decoration: none;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    color: #837E9F;
+    font-weight: 800;
+    font-size: 13px;
+    transition: all 300ms ease;
+}
+.container-endereco-socials-intems-intem a:hover{
+    color:#976E9F;
+}
+
+/*=================CONTAINER-TECNOLOGIA=================*/
+.container-tecnologia {
+    display: block;
+    margin-top: 420px;
+    background: #302F3D;
+    width: 348px;
+    height: 208px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+.container-tecnologia h1 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-size: 20px;
+    color: #837E9F;
+    margin-top: 4px;
+
+}
+
+
+.container-experiencia {
+    display: block;
     margin-top: 40px;
     background: #302F3D;
     width: 348px;
     height: 348px;
     border-radius: 20px;
     margin-left: 40px;
-   
 }
-.img-container-endereco-redessocias{
-    position:absolute;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    color: #837E9F;
-}
-
-
-a{
-    display: block;
-    color: #837E9F;
-    text-decoration: none;
-    margin-top: 37px;
-    margin-left: 84px;
-    font-family: 'Merriweather Sans';
-    font-style: normal;
-    font-size: 13px;
-    font-weight: 400;
-   
-
-}
-
-
-
-
