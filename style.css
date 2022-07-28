@@ -104,32 +104,65 @@ body {
 }
 
 /*=================CONTAINER-TECNOLOGIA=================*/
-.container-tecnologia {
-    display: block;
-    margin-top: 420px;
+
+.container-tecnologias{
+    display:flex;
+    margin-top: 40px;
     background: #302F3D;
     width: 348px;
     height: 208px;
     border-radius: 20px;
     margin-left: 40px;
 }
-
-.container-tecnologia h1 {
+.container-tecnologias h1{
+    position: absolute;
+    color: #837E9F;
     font-family: 'Merriweather Sans';
     font-style: normal;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-left: 20px;
     font-size: 20px;
-    color: #837E9F;
-    margin-top: 4px;
-
+}
+.container-tecnologias .techs{
+    list-style: none;
+    margin-top: 60px;
+    
+    
+   
+}
+.container-tecnologias .techs .tech{
+    text-align: center;
+    position: relative;
+    width: 86px;
+    height: 24px;
+    border-radius: 30px;
+    background: #CB92B1;
+    margin-top:20px ;
+    margin-right: 15px;
+    left: 30px;
+    transition: all 300ms ease;
+    
 }
 
+.container-tecnologias .techs .tech:hover{
+    background: #cc7ca8;
+    cursor: pointer;
+}
 
-.container-experiencia {
-    display: block;
-    margin-top: 40px;
-    background: #302F3D;
-    width: 348px;
-    height: 348px;
-    border-radius: 20px;
-    margin-left: 40px;
+.container-tecnologias .techs a{
+   
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    color: black;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+    
+   
+     
 }
