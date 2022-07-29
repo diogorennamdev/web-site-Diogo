@@ -20,7 +20,7 @@ body {
     border-radius: 50%;
     width: 128px;
     height: 128px;
-    border: 2px solid var(----background-color----);
+    border: 3px solid var(----background-color----);
     margin-bottom: 20px;
     margin-top: 32px;
 }
@@ -91,7 +91,7 @@ body {
 .container-edereco-socials-icon i{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30.5px;
+    margin-bottom: 30.9px;
     margin-left: 15px;
     color: var(----text-color----)
 }
