@@ -1,6 +1,11 @@
 /*==========GERAL=========*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
+:root{
+    ----background-color----:#020e26;
+    ----container-color-----:#07162e;
+    ----text-color----:#307a7a;
+    ----text-color-hover:#36a6bf;
+}
 * {
     box-sizing: border-box;
     padding: 0%;
@@ -8,14 +13,14 @@
 }
 
 body {
-    background-color: #22212C;
+    background-color:var(----background-color----);
 }
 
 #fotoDiogo {
     border-radius: 50%;
     width: 128px;
     height: 128px;
-    border: 2px solid #00FF00;
+    border: 2px solid var(----background-color----);
     margin-bottom: 20px;
     margin-top: 32px;
 }
@@ -25,7 +30,7 @@ body {
 
     display: block;
     margin-top: 40px;
-    background: #302F3D;
+    background: var(----container-color-----);
     width: 348px;
     height: 292px;
     text-align: center;
@@ -36,19 +41,19 @@ body {
 
 .container-header h1 {
 
-    font-family: 'Merriweather Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    color: #837E9F;
-    font-weight: 700;
+    color: var(----text-color----);
+    font-weight: 800;
     font-size: 23px;
 }
 
 .container-header h2 {
-    font-family: 'Merriweather Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    color: #837E9F;
-    font-weight: 300;
-    font-size: 13px;
+    color: var(----text-color----);
+    font-weight: 600;
+    font-size: 15px;
 
 }
 
@@ -56,7 +61,7 @@ body {
 .container-endereco-socials {
     display: flex;
     margin-top: 40px;
-    background: #302F3D;
+    background: #07162e;
     width: 348px;
     height: 330px;
     border-radius: 20px;
@@ -86,21 +91,21 @@ body {
 .container-edereco-socials-icon i{
     display: flex;
     flex-direction: column;
-    margin-bottom: 31.6px;
+    margin-bottom: 30.5px;
     margin-left: 15px;
-    color: #837E9F;
+    color: var(----text-color----)
 }
 .container-endereco-socials-intems-intem a {
     text-decoration: none;
-    font-family: 'Merriweather Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    color: #837E9F;
-    font-weight: 800;
-    font-size: 13px;
+    color: var(----text-color----);
+    font-weight: 600;
+    font-size: 14px;
     transition: all 300ms ease;
 }
 .container-endereco-socials-intems-intem a:hover{
-    color:#976E9F;
+    color:var(----text-color-hover);
 }
 
 /*=================CONTAINER-TECNOLOGIA=================*/
@@ -108,7 +113,7 @@ body {
 .container-tecnologias{
     display:flex;
     margin-top: 40px;
-    background: #302F3D;
+    background: var(----container-color-----);
     width: 348px;
     height: 208px;
     border-radius: 20px;
@@ -116,8 +121,8 @@ body {
 }
 .container-tecnologias h1{
     position: absolute;
-    color: #837E9F;
-    font-family: 'Merriweather Sans';
+    color: var(----text-color----);
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     margin-top: 30px;
@@ -137,7 +142,7 @@ body {
     width: 86px;
     height: 24px;
     border-radius: 30px;
-    background: #CB92B1;
+    background: var(----text-color----);
     margin-top:20px ;
     margin-right: 15px;
     left: 30px;
@@ -146,7 +151,7 @@ body {
 }
 
 .container-tecnologias .techs .tech:hover{
-    background: #cc7ca8;
+    background:var(----text-color-hover);
     cursor: pointer;
 }
 
@@ -155,11 +160,11 @@ body {
     position: relative;
     justify-items: center;
     align-items: center;
-    color: black;
-    font-family: 'Merriweather Sans';
+    color: white;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 10px;
     text-decoration: none;
     
