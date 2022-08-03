@@ -1,7 +1,7 @@
 /*==========GERAL=========*/
 
 :root{
-    ----background-color----:#020e26;
+   
     ----container-color-----:#07162e;
     ----text-color----:#3bd9d9;
     ----text-color-hover:#307a7a;
@@ -65,7 +65,7 @@ body {
 .container-endereco-socials {
     display: flex;
     margin-top: 40px;
-    background: #07162e;
+    background: var(----container-color-----);
     width: 348px;
     height: 330px;
     border-radius: 20px;
@@ -217,7 +217,16 @@ body {
     
 }
 
-
+/*========Container educacao=======*/
+.container-educacao{
+    display:flex;
+    margin-top: 40px;
+    background: var(----container-color-----);
+    width: 348px;
+    height: 250px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
 
 
 /*========Animation============*/
