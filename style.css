@@ -198,8 +198,6 @@ body {
 }
 .container-experiencia li{
     position: absolute;
-    list-style:circle;
-    
     color: var(----text-color----);
     margin:80px 50px;
     font-family: 'Roboto', sans-serif;
@@ -227,9 +225,49 @@ body {
     border-radius: 20px;
     margin-left: 40px;
 }
+.container-educacao h1{
+    display: flex;
+    position: absolute;
+    color: var(----text-color----);
+    margin:30px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
 
+.container-educacao li{
+    position: absolute;
+    color: var(----text-color----);
+    margin:80px 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/*========footer===========*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: var(----text-color----);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: all 400ms ease;
+    opacity: 0.6;
+}
+footer:hover{
+    color: var(----text-color-hover);
+   
+}
 
 /*========Animation============*/
+
 @keyframes colors{
     0%{
         background-position: 0% 50%;
