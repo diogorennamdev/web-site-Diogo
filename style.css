@@ -177,42 +177,41 @@ body {
 }
 
 /*============CONTAINER EXPERIENCIAS ==========*/
+
 .container-experiencia{
     display:flex;
     margin-top: 40px;
     background: var(----container-color-----);
     width: 348px;
-    height: 250px;
+    height: 280px;
     border-radius: 20px;
     margin-left: 40px;
 }
 .container-experiencia h1{
-    display: flex;
-    position: absolute;
+    margin: 20px 30px ;
     color: var(----text-color----);
-    margin:30px 30px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
 }
 .container-experiencia li{
-    position: absolute;
+    margin-left: 60px;
     color: var(----text-color----);
-    margin:80px 50px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
 }
 .container-experiencia p{
+
     color: var(----text-color----);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    margin:105px 70px;
+    margin-left: 70px;
     font-size: 12px;
-    
+    margin-top:5px;
 }
 
 /*========Container educacao=======*/
