@@ -1,312 +1,123 @@
-/*==========GERAL=========*/
-
-:root{
-   
-    ----container-color-----:#07162e;
-    ----text-color----:#3bd9d9;
-    ----text-color-hover:#179898;
-   
-    
-}
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* GERAL*/
+*{
+    margin: 0%;
     box-sizing: border-box;
     padding: 0%;
-    margin: 0;
 }
-
-body {
-    background:linear-gradient(50deg,#020e26,#0c1f3b,#19313e,#071c25 ) ;
-    background-size: 300% 300%;
-    animation: colors 15s ease infinite;
+:root{
+    ----background-color----:#1E192C;
+    ----container-border-----:#ffffff;
+    ----text-color----:#ffffff;
+    ----text-color-hover:#179898;    
 }
-
-#fotoDiogo {
+img{
     border-radius: 50%;
     width: 128px;
     height: 128px;
-    border: 3px solid var(----background-color----);
-    margin-bottom: 20px;
-    margin-top: 32px;
-}
-
-/*===============CONTAINER CABEÇARIO==========*/
-.container-header {
-    display: block;
-    margin-top: 40px;
-    background: var(----container-color-----);
-    width: 348px;
-    height: 292px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-left: 40px;
-}
-
-.container-header h1 {
-
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: var(----text-color----);
-    font-weight: 800;
-    font-size: 23px;
-}
-
-.container-header h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: var(----text-color----);
-    font-weight: 600;
-    font-size: 15px;
-
-}
-
-/*==============CONTAINER-REDES-SOCIAS-ENDEREÇO======*/
-.container-endereco-socials {
-  
-    display: flex;
-    margin-top: 40px;
-    background: var(----container-color-----);
-    width: 348px;
-    height: 330px;
-    border-radius: 20px;
-    margin-left: 40px;
-
-}
-
-.container-endereco-socials-intems {
-    margin: 40px 70px;
-
-}
-
-.container-endereco-socials-intems-intem {
-    display: block;
-    position: relative;
-    list-style: none;
-    margin-bottom: 28px;
-    
-}
-.container-edereco-socials-icon {
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 40px;
-    
-
-}
-.container-edereco-socials-icon i{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 31px;
-    margin-left: 15px;
-    color: var(----text-color----)
-}
-.container-endereco-socials-intems-intem a {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: var(----text-color----);
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 300ms ease;
-}
-.container-endereco-socials-intems-intem a:hover{
-    color:var(----text-color-hover);
-}
-
-/*=================CONTAINER-TECNOLOGIA=================*/
-
-.container-tecnologias{
-    display:flex;
-    margin-top: 40px;
-    background: var(----container-color-----);
-    width: 348px;
-    height: 208px;
-    border-radius: 20px;
-    margin-left: 40px;
-}
-.container-tecnologias h1{
-    position: absolute;
-    color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 900;
+    border: 3px solid var(----text-color----);
     margin-top: 30px;
-    margin-left: 20px;
-    font-size: 20px;
 }
-.container-tecnologias .techs{
+.information{
+ max-width: 348px;
+}
+body{
+   background: var(----background-color----);
+   font-family: 'Roboto', sans-serif;
+}
+li{
     list-style: none;
-    margin-top: 60px;
-    
-    
+}
+/*Profile*/
+.profile{
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    max-width: 348px;
+    margin: 40px;
+    text-align: center;
+    color: var(----text-color----);
    
 }
-.container-tecnologias .techs .tech{
-    text-align: center;
-    position: relative;
+
+
+/*links*/
+.links{
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    margin: 40px;
+    height: 150px;
+    padding: 20px 30px;
+    color: var(----text-color----);
+    padding-right: 20px;
+   
+}
+.links i{
+    margin-bottom: 10px;
+    display: flex;
+  
+}
+.links a{
+    margin-top: 4px;
+    position: absolute;
+    margin-left: 25px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: var(----text-color----);
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+/*techs*/
+
+.techs{
+   display: flex;
+    border: 1px solid #ffffff; 
+    margin: 40px;
+    height: 190px;
+    border-radius: 10px;
+
+}
+.techs li{
+    display: flex;
     width: 86px;
     height: 24px;
-    border-radius: 30px;
-    background: var(----text-color----);
-    margin-top:20px ;
-    margin-right: 15px;
-    left: 30px;
-    transition: all 300ms ease;
-    
+    margin-bottom: 10px;
+    padding-right: 30px;
+    border-radius: 40px;
+    background-color: #E4105D;
+  
 }
-
-.container-tecnologias .techs .tech:hover{
-    background:var(----text-color-hover);
-    cursor: pointer;
-}
-
-.container-tecnologias .techs a{
-   
-    position: relative;
-    justify-items: center;
+.techs ul{
+    margin-left: 15px;
+    margin-top: 70px;
+    justify-content: center;
     align-items: center;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 10px;
-    text-decoration: none;
     
-   
-     
 }
-
-/*============CONTAINER EXPERIENCIAS ==========*/
-
-.container-experiencia{
-    display:flex;
-    margin-top: 40px;
-    background: var(----container-color-----);
-    width: 348px;
-    height: 280px;
-    border-radius: 20px;
-    margin-left: 40px;
-}
-.container-experiencia h1{
-    margin: 20px 30px ;
+.techs h2{
+    margin: 20px 30px;
     color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-}
-.container-experiencia li{
-    margin-left: 60px;
-    color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-}
-.container-experiencia p{
-
-    color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 70px;
-    font-size: 12px;
-    margin-top:5px;
-}
-
-/*========Container educacao=======*/
-.container-educacao{
-    display:flex;
-    margin-top: 40px;
-    background: var(----container-color-----);
-    width: 348px;
-    height: 250px;
-    border-radius: 20px;
-    margin-left: 40px;
-}
-.container-educacao h1{
-    display: flex;
     position: absolute;
+}
+.techs a {
     color: var(----text-color----);
-    margin:30px 30px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    text-decoration: none;
+   margin: auto;
+   text-transform: uppercase;
+   font-size: 10px;
+}
+/* experiences-education*/
+
+.experiences-education{
+    border: 1px solid red; 
+    margin: 40px;
+    height: 240px;
 }
 
-.container-educacao li{
-    position: absolute;
+.experiences-education {
     color: var(----text-color----);
-    margin:80px 50px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
 }
-
-
-/*==========Container My projetcs header=======*/
-.my-projetcs-container{
-    position: absolute;
-    background: var(----container-color-----);
-    width:850px;
-    height: 86px;
-    display: flex;
-    border-radius: 15px;
-    margin-left: 448px;
-    margin-top: auto;
-    justify-content: space-between;
-   
-
-}
-.my-projetcs-container h1{
-    color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size:20px ;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.my-projetcs-container p{
-   
-    color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    margin-top: 30px;
-    margin-right: 30px;
-}
-
-
-/*========footer===========*/
 
 footer{
-    display: flex;
-    justify-content: center;
-    color: var(----text-color----);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    transition: all 400ms ease;
-    opacity: 0.6;
-}
-footer:hover{
-    color: var(----text-color-hover);
-   
-}
-
-/*========Animation============*/
-
-@keyframes colors{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
+    text-align: center;
 }
