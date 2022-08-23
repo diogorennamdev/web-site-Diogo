@@ -1,69 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <title>Diogo Rennam</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Diogo Rennam </title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav id="navigation" class="scroll">
     
- <div class="information">
-    <section class="profile">
-        <img src="/assets/diogorennam.png" alt=" Imagem de Diogo Rennam">
-        <h2>Diogo Rennam</h2>
-        <p>Software Developer</p>
-    </section>
-
-    <section class="links">
+    <div class="wrapper">
+      
+      <svg width="104" height="16" viewBox="0 0 104 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.184 12V0.799999H3.624C5.59733 0.799999 7.048 1.30133 7.976 2.304C8.91467 3.30667 9.384 4.68267 9.384 6.432C9.384 8.14933 8.91467 9.50933 7.976 10.512C7.048 11.504 5.59733 12 3.624 12H0.184ZM1.528 10.88H3.592C4.68 10.88 5.544 10.704 6.184 10.352C6.83467 9.98933 7.29867 9.47733 7.576 8.816C7.85333 8.144 7.992 7.34933 7.992 6.432C7.992 5.49333 7.85333 4.688 7.576 4.016C7.29867 3.344 6.83467 2.82667 6.184 2.464C5.544 2.10133 4.68 1.92 3.592 1.92H1.528V10.88ZM12.0606 2.304C11.794 2.304 11.57 2.21867 11.3886 2.048C11.218 1.86667 11.1326 1.64267 11.1326 1.376C11.1326 1.12 11.218 0.906666 11.3886 0.735999C11.57 0.565333 11.794 0.48 12.0606 0.48C12.3166 0.48 12.5353 0.565333 12.7166 0.735999C12.898 0.906666 12.9886 1.12 12.9886 1.376C12.9886 1.64267 12.898 1.86667 12.7166 2.048C12.5353 2.21867 12.3166 2.304 12.0606 2.304ZM11.3886 12V4.064H12.7326V12H11.3886ZM18.6888 12.192C17.9421 12.192 17.2701 12.0213 16.6728 11.68C16.0754 11.3387 15.6008 10.8587 15.2488 10.24C14.9074 9.61067 14.7368 8.87467 14.7368 8.032C14.7368 7.18933 14.9128 6.45867 15.2648 5.84C15.6168 5.21067 16.0914 4.72533 16.6888 4.384C17.2968 4.04267 17.9741 3.872 18.7208 3.872C19.4674 3.872 20.1394 4.04267 20.7368 4.384C21.3341 4.72533 21.8034 5.21067 22.1448 5.84C22.4968 6.45867 22.6728 7.18933 22.6728 8.032C22.6728 8.87467 22.4968 9.61067 22.1448 10.24C21.7928 10.8587 21.3128 11.3387 20.7048 11.68C20.1074 12.0213 19.4354 12.192 18.6888 12.192ZM18.6888 11.04C19.1474 11.04 19.5741 10.928 19.9688 10.704C20.3634 10.48 20.6834 10.144 20.9288 9.696C21.1741 9.248 21.2968 8.69333 21.2968 8.032C21.2968 7.37067 21.1741 6.816 20.9288 6.368C20.6941 5.92 20.3794 5.584 19.9848 5.36C19.5901 5.136 19.1688 5.024 18.7208 5.024C18.2621 5.024 17.8354 5.136 17.4408 5.36C17.0461 5.584 16.7261 5.92 16.4808 6.368C16.2354 6.816 16.1128 7.37067 16.1128 8.032C16.1128 8.69333 16.2354 9.248 16.4808 9.696C16.7261 10.144 17.0408 10.48 17.4248 10.704C17.8194 10.928 18.2408 11.04 18.6888 11.04ZM27.3338 9.504C26.8858 9.504 26.4751 9.44533 26.1018 9.328L25.3018 10.08C25.4191 10.1653 25.5631 10.24 25.7338 10.304C25.9151 10.3573 26.1711 10.4107 26.5018 10.464C26.8324 10.5067 27.2964 10.5547 27.8938 10.608C28.9604 10.6827 29.7231 10.928 30.1818 11.344C30.6404 11.76 30.8698 12.304 30.8698 12.976C30.8698 13.4347 30.7418 13.872 30.4858 14.288C30.2404 14.704 29.8564 15.0453 29.3338 15.312C28.8218 15.5787 28.1604 15.712 27.3498 15.712C26.6351 15.712 26.0004 15.616 25.4457 15.424C24.8911 15.2427 24.4591 14.96 24.1497 14.576C23.8404 14.2027 23.6858 13.728 23.6858 13.152C23.6858 12.8533 23.7658 12.528 23.9258 12.176C24.0858 11.8347 24.3844 11.5093 24.8218 11.2C24.5871 11.104 24.3844 11.0027 24.2138 10.896C24.0538 10.7787 23.9044 10.6507 23.7658 10.512V10.144L25.1258 8.8C24.4964 8.26667 24.1818 7.56267 24.1818 6.688C24.1818 6.16533 24.3044 5.69067 24.5498 5.264C24.7951 4.83733 25.1524 4.50133 25.6218 4.256C26.0911 4 26.6618 3.872 27.3338 3.872C27.7924 3.872 28.2084 3.936 28.5818 4.064H31.5098V5.072L30.0218 5.136C30.3311 5.584 30.4858 6.10133 30.4858 6.688C30.4858 7.21067 30.3578 7.68533 30.1018 8.112C29.8564 8.53867 29.4991 8.88 29.0298 9.136C28.5711 9.38133 28.0058 9.504 27.3338 9.504ZM27.3338 8.4C27.8991 8.4 28.3471 8.256 28.6778 7.968C29.0191 7.66933 29.1898 7.24267 29.1898 6.688C29.1898 6.144 29.0191 5.728 28.6778 5.44C28.3471 5.14133 27.8991 4.992 27.3338 4.992C26.7578 4.992 26.2991 5.14133 25.9578 5.44C25.6271 5.728 25.4618 6.144 25.4618 6.688C25.4618 7.24267 25.6271 7.66933 25.9578 7.968C26.2991 8.256 26.7578 8.4 27.3338 8.4ZM24.9978 13.024C24.9978 13.5573 25.2218 13.952 25.6698 14.208C26.1178 14.4747 26.6778 14.608 27.3498 14.608C28.0111 14.608 28.5391 14.464 28.9338 14.176C29.3391 13.888 29.5418 13.504 29.5418 13.024C29.5418 12.6827 29.4031 12.384 29.1258 12.128C28.8484 11.8827 28.3364 11.7387 27.5898 11.696C27.0031 11.6533 26.4964 11.6 26.0698 11.536C25.6324 11.7707 25.3444 12.0213 25.2057 12.288C25.0671 12.5653 24.9978 12.8107 24.9978 13.024ZM36.3294 12.192C35.5827 12.192 34.9107 12.0213 34.3134 11.68C33.716 11.3387 33.2414 10.8587 32.8894 10.24C32.548 9.61067 32.3774 8.87467 32.3774 8.032C32.3774 7.18933 32.5534 6.45867 32.9054 5.84C33.2574 5.21067 33.732 4.72533 34.3294 4.384C34.9374 4.04267 35.6147 3.872 36.3614 3.872C37.108 3.872 37.78 4.04267 38.3774 4.384C38.9747 4.72533 39.444 5.21067 39.7854 5.84C40.1374 6.45867 40.3134 7.18933 40.3134 8.032C40.3134 8.87467 40.1374 9.61067 39.7854 10.24C39.4334 10.8587 38.9534 11.3387 38.3454 11.68C37.748 12.0213 37.076 12.192 36.3294 12.192ZM36.3294 11.04C36.788 11.04 37.2147 10.928 37.6094 10.704C38.004 10.48 38.324 10.144 38.5694 9.696C38.8147 9.248 38.9374 8.69333 38.9374 8.032C38.9374 7.37067 38.8147 6.816 38.5694 6.368C38.3347 5.92 38.02 5.584 37.6254 5.36C37.2307 5.136 36.8094 5.024 36.3614 5.024C35.9027 5.024 35.476 5.136 35.0814 5.36C34.6867 5.584 34.3667 5.92 34.1214 6.368C33.876 6.816 33.7534 7.37067 33.7534 8.032C33.7534 8.69333 33.876 9.248 34.1214 9.696C34.3667 10.144 34.6814 10.48 35.0654 10.704C35.46 10.928 35.8814 11.04 36.3294 11.04ZM46.4965 12V0.799999H50.1125C50.9872 0.799999 51.7018 0.943999 52.2565 1.232C52.8112 1.52 53.2218 1.91467 53.4885 2.416C53.7552 2.91733 53.8885 3.472 53.8885 4.08C53.8885 4.784 53.6965 5.41867 53.3125 5.984C52.9392 6.54933 52.3525 6.94933 51.5525 7.184L54.0005 12H52.4165L50.1445 7.376H50.0485H47.8405V12H46.4965ZM47.8405 6.32H50.0165C50.8805 6.32 51.5098 6.112 51.9045 5.696C52.2992 5.28 52.4965 4.74667 52.4965 4.096C52.4965 3.43467 52.2992 2.912 51.9045 2.528C51.5205 2.13333 50.8858 1.936 50.0005 1.936H47.8405V6.32ZM58.9845 12.192C58.2272 12.192 57.5552 12.0213 56.9685 11.68C56.3818 11.328 55.9178 10.8427 55.5765 10.224C55.2458 9.60533 55.0805 8.87467 55.0805 8.032C55.0805 7.2 55.2458 6.47467 55.5765 5.856C55.9072 5.22667 56.3658 4.74133 56.9525 4.4C57.5498 4.048 58.2378 3.872 59.0165 3.872C59.7845 3.872 60.4458 4.048 61.0005 4.4C61.5658 4.74133 61.9978 5.19467 62.2965 5.76C62.5952 6.32533 62.7445 6.93333 62.7445 7.584C62.7445 7.70133 62.7392 7.81867 62.7285 7.936C62.7285 8.05333 62.7285 8.18667 62.7285 8.336H56.4085C56.4405 8.944 56.5792 9.45067 56.8245 9.856C57.0805 10.2507 57.3952 10.5493 57.7685 10.752C58.1525 10.9547 58.5578 11.056 58.9845 11.056C59.5392 11.056 60.0032 10.928 60.3765 10.672C60.7498 10.416 61.0218 10.0693 61.1925 9.632H62.5205C62.3072 10.368 61.8965 10.9813 61.2885 11.472C60.6912 11.952 59.9232 12.192 58.9845 12.192ZM58.9845 5.008C58.3445 5.008 57.7738 5.20533 57.2725 5.6C56.7818 5.984 56.4992 6.54933 56.4245 7.296H61.4165C61.3845 6.58133 61.1392 6.02133 60.6805 5.616C60.2218 5.21067 59.6565 5.008 58.9845 5.008ZM64.5259 12V4.064H65.7419L65.8219 5.488C66.0779 4.98667 66.4459 4.592 66.9259 4.304C67.4059 4.016 67.9499 3.872 68.5579 3.872C69.4965 3.872 70.2432 4.16 70.7979 4.736C71.3632 5.30133 71.6459 6.176 71.6459 7.36V12H70.3019V7.504C70.3019 5.85067 69.6192 5.024 68.2539 5.024C67.5712 5.024 67.0005 5.27467 66.5419 5.776C66.0939 6.26667 65.8699 6.97067 65.8699 7.888V12H64.5259ZM73.6821 12V4.064H74.8981L74.9781 5.488C75.2341 4.98667 75.6021 4.592 76.0821 4.304C76.5621 4.016 77.1061 3.872 77.7141 3.872C78.6528 3.872 79.3995 4.16 79.9541 4.736C80.5195 5.30133 80.8021 6.176 80.8021 7.36V12H79.4581V7.504C79.4581 5.85067 78.7755 5.024 77.4101 5.024C76.7275 5.024 76.1568 5.27467 75.6981 5.776C75.2501 6.26667 75.0261 6.97067 75.0261 7.888V12H73.6821ZM85.4784 12.192C84.817 12.192 84.2677 12.08 83.8304 11.856C83.393 11.632 83.0677 11.3333 82.8544 10.96C82.641 10.5867 82.5344 10.1813 82.5344 9.744C82.5344 8.93333 82.8437 8.30933 83.4624 7.872C84.081 7.43467 84.9237 7.216 85.9904 7.216H88.1344V7.12C88.1344 6.42667 87.953 5.904 87.5904 5.552C87.2277 5.18933 86.7424 5.008 86.1344 5.008C85.6117 5.008 85.1584 5.14133 84.7744 5.408C84.401 5.664 84.1664 6.04267 84.0704 6.544H82.6944C82.7477 5.968 82.9397 5.48267 83.2704 5.088C83.6117 4.69333 84.033 4.39467 84.5344 4.192C85.0357 3.97867 85.569 3.872 86.1344 3.872C87.2437 3.872 88.0757 4.17067 88.6304 4.768C89.1957 5.35467 89.4784 6.13867 89.4784 7.12V12H88.2784L88.1984 10.576C87.9744 11.024 87.6437 11.408 87.2064 11.728C86.7797 12.0373 86.2037 12.192 85.4784 12.192ZM85.6864 11.056C86.1984 11.056 86.6357 10.9227 86.9984 10.656C87.3717 10.3893 87.6544 10.0427 87.8464 9.616C88.0384 9.18933 88.1344 8.74133 88.1344 8.272V8.256H86.1024C85.313 8.256 84.753 8.39467 84.4224 8.672C84.1024 8.93867 83.9424 9.27467 83.9424 9.68C83.9424 10.096 84.0917 10.432 84.3904 10.688C84.6997 10.9333 85.1317 11.056 85.6864 11.056ZM91.4946 12V4.064H92.7106L92.8066 5.216C93.0626 4.78933 93.404 4.45867 93.8306 4.224C94.2573 3.98933 94.7373 3.872 95.2706 3.872C95.9 3.872 96.4386 4 96.8866 4.256C97.3453 4.512 97.6973 4.90133 97.9426 5.424C98.22 4.944 98.5986 4.56533 99.0786 4.288C99.5693 4.01067 100.097 3.872 100.663 3.872C101.612 3.872 102.369 4.16 102.935 4.736C103.5 5.30133 103.783 6.176 103.783 7.36V12H102.455V7.504C102.455 6.68267 102.289 6.064 101.959 5.648C101.628 5.232 101.153 5.024 100.535 5.024C99.8946 5.024 99.3613 5.27467 98.9346 5.776C98.5186 6.26667 98.3106 6.97067 98.3106 7.888V12H96.9666V7.504C96.9666 6.68267 96.8013 6.064 96.4706 5.648C96.14 5.232 95.6653 5.024 95.0466 5.024C94.4173 5.024 93.8893 5.27467 93.4626 5.776C93.0466 6.26667 92.8386 6.97067 92.8386 7.888V12H91.4946Z" fill="#FFFAF1"/>
+        </svg>
+        
+      <div class="menu">
+      
         <ul>
-            <li><i class="fa-solid fa-map-pin"> <a href="https://www.google.com/maps/place/Cacule" target="_blank">  Caculé / Bahia</a></i> </li>
-            <li>
-                <i class="fa-brands fa-linkedin"> <a href="https://www.linkedin.com/in/diogo-rennam/" target="_blank"> Diogo Rennam</a></i> 
-            </li>
-            <li>
-                <i class="fa-brands fa-instagram"> <a href="https://www.instagram.com/renam_diogodev/" target="_blank"> renam_diogodev</a></i> 
-            </li>
-            <li>
-                <i class="fa-brands fa-github"> <a href="https://github.com/diogorenam" target="_blank">diogo-rennam</a></i>
-            </li>
-            <li>
-                <i class="fa-solid fa-envelope"> <a href="mailto:diogorenan006@gmail.com" target="_blank">diogorenan006@gmail.com </a></i>
-            </li>
+          <li><a onclick="closeMenu()"
+          href="#home">Início</a></li>
+
+          <li><a onclick="closeMenu()" href="#services">Projetos</a></li>
+
+          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
         </ul>
-    </section>
+      <a class= "button" href="#contact"> Entrar em Contato</a>
 
-    <section class="techs">
-        <h2>Tecnologias</h2>
-       <ul>
-        <li> <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/" target="_blank">JavaScript</a> </li>
-        <li> <a href="https://www.tutorialspoint.com/java/" target="_blank">Java</a></li>
-        <li> <a href="https://www.python.org/doc/" target="_blank">Python</a></li>
-       </ul> 
+       <ul class="social-links">
+          <li><a target="_blank" href="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </a>
+          </li>
 
-       <ul>
-        <li class="tech"> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">html</a></li>
-        <li class="tech" > <a href="https://developer.mozilla.org/pt-BR/docs/Web/css" target="_blank">css</a></li>
-        <li class="tech"> <a href="https://git-scm.com/" target="_blank"> git</a></li>
+          <li><a target="_blank" href="facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            </li>
+
+          <li><a target="_blank" href="youtube">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </a>
+          </li>
        </ul>
-    </section>
+    </div>
 
-    <section class="experiences-education">
-        <h2>Experiências</h2>
-        <h3>Esquadromil</h3>
-           <p>Jovem Aprendiz <br> Auxiliar-Admistrativo</p>
-        <h2>Educação</h2>
-        <p>UNIFG Analises e desenvolvimento de Sistemas</p>
-    </section>
+    <button 
+    onclick="openMenu()"
+    class="open-menu">
+      <svg width="40" 
+      height="40" 
+      viewBox="0 0 40 40" 
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+       <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+       />
+       <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+       />
+       <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+     </svg>    
+    </button>
+    
+    <button
+    onclick="closeMenu()"
+    class="open-close">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+    </button>      
+    </div>
+  </nav>
 
-   
-</div>  
-<footer>
-    <p>Feito com 💜 por Diogo Rennam</p>
-</footer>
-</body>
-<script src="https://kit.fontawesome.com/a34b1e8191.js" crossorigin="anonymous"></script>
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+      <header>
+        <h4>BEM VINDOS A MINHA PÁGINA 👋</h4>
+      <p>A tecnologia é o futuro de agora!</p>
+ </header>
+  <div class="content">
+<a class="button" href="#contact">
+  
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z" fill="white"/>
+    </svg>
+    
+Entrar em contato
+  </a>
+</div>
+</div>
+<div class="col-b">
+  <img src="./assets/ImagemDiogoRennam.png" alt="Imagem de diogo rennam">
 
+</div>
+<div class="stats">
+
+  <div class="stat">
+    <h3><i class="fa-brands fa-linkedin"></i></h3>
+      <p><a href="https://www.linkedin.com/in/diogo-rennam/" target="_blank">Linkedin</a> </p>
+ </div>
+  <div class="stat">
+    <h3><i class="fa-solid fa-earth-americas"></i></h3>
+      <p><a href="https://www.bing.com/maps?&ty=18&q=Cacul%C3%A9%2C%20Bahia" target="_blank">Caculé/Ba</a> </p>
+ </div>
+ <div class="stat">
+   <h3><i class="fa-brands fa-github"></i></h3>
+     <p><a href="https://github.com/diogorenam" target="_blank">Github</a></p>
+ </div>
+</div>
+</div>
+  </section>
+
+  <section id="services">
+    <div class = "wrapper">
+      <header>
+        <h4>Projetos</h4>
+          <h2>A tecnologia tem o poder de transformar vidas!</h2>
+     </header>
+     <div class="content">
+        <div class="cards">
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Problemas digestivos</h3>
+            <p>Os problemas digestivos são uma queixa frequente nos consultórios médicos. Quando a nossa digestão não funciona direito, é porque o nosso organismo está em desequilíbrio e isso também pode afetar a nossa mente. Por outro lado, uma digestão normal significa que os nutrientes consumidos estão sendo absorvidos de maneira apropriada.</p>
+       </div>
+
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Saúde Hormonal</h3>
+            <p>A atividade hormonal desempenha um papel muito importante na saúde física e mental de todas as pessoas. Apesar da maioria ignorar isso, os hormônios são os encarregados de regular muitos processos físicos e psicológicos em cada uma das etapas de nossa vida </p>
+       </div>
+
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Bem-estar mental</h3>
+            <p>O bem-estar mental consiste em administrar sentimentos e emoções, sejam eles positivos ou negativos, de forma equilibrada, independente de fatores externos. Nesse sentido, quando algo ruim acontece, por exemplo, o indivíduo se sente triste por um período, mas a situação não o desestabiliza por completo e logo ele se recupera./p>
+       </div>
+
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Cuidados Pediátricos</h3>
+            <p>Os cuidados paliativos em oncologia pediátrica são parte integrante do cuidado, e aprimorá-los é prerrogativa de fundamental importância, pois são utilizados para melhorar a qualidade de vida das crianças e adolescentes em qualquer fase de seu tratamento.</p>
+       </div>
+
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Autoimune e Inflamação</h3>
+            <p>Uma doença autoimune é essencialmente a revoltado seu corpo contra si mesmo. Em vez de protegê–lo de ameaças externas, o sistema imune direciona o seu ataque contra tecidos e órgãos saudáveis.</p>
+       </div>
+
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Saúde do Coração</h3>
+            <p>O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração precisa de exercícios para mantê-lo em forma.</p>
+       </div>
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Saúde do Coração</h3>
+            <p>O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração precisa de exercícios para mantê-lo em forma.</p>
+       </div>
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Saúde do Coração</h3>
+            <p>O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração precisa de exercícios para mantê-lo em forma.</p>
+       </div>
+       <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+          <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Saúde do Coração</h3>
+            <p>O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração precisa de exercícios para mantê-lo em forma.</p>
+       </div>
+     </div>
+  </div>
+</div>
+</section>
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+      <header>
+        <h4>SOBRE MIm</h4>
+        <h2>Entenda quem sou</h2>
+      </header>
+      <div class="content">
+        <p> Me Chamo Diogo Rennam tenho 18 anos, sou natural de Caulé onde resido até hoje, atualmente sou estudante do curso superior de Analises e Desenvolvimento de Sistemas, estou no 3º semestre, pretendo seguir a área de Desenvolvimento front-end tenho conhecimento básico nas tecnologias Git, Html, Css, JavaScript, Java, Mysql e irei aprender outras tecnologias como React, Node afim de desenvolver uma aplicação completa com ferramentas ágeis. </p>
+     
+      </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/Diogoimagem2.jpg" alt="Foto de diogo rennam sorrindo">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a">
+      <header>
+        <h2>Entre em contato comigo!</h2>
+      </header>
+      <div class="content">
+       <ul>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          R. Joaquim Antonio, 55</li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 6L12 13L2 6" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+           diogorenan006@gmail.com</li>
+       </ul>
+        <a class="button"
+          href="https://wa.me/5577981524779" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z" fill="white"/>
+            </svg>
+            Entrar em contato 
+        </a>       
+      </div>
+    </div>
+      <div class="col-b">
+        <img id="imgContato" src="/assets/imagemContato.webp" alt="segurando um celular na mão ">
+      </div>
+    </div>
+  </section>
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <h1 class="logo" href="#home">Diogo Rennam</h1>
+     
+      <p>
+        ©2022 Diogo Rennam. <br>
+        Todos os direitos reservados
+      </p>
+    </div>
+     <div class="col-b">
+      <ul class="social-links">
+        <li><a target="_blank" href="https://www.instagram.com/renam_diogodev/" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+        </li>
+
+        <li><a target="_blank" href="https://www.facebook.com/diogo.renam.5">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          </li>
+
+        
+     </ul>
+     </div>
+    </div>
+  
+    </footer>
+    <a id="backToTopButton" href="#home">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" fill="#00856F"/>
+        <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+    </a>
+  <!--Scrool Reaveal lib-->
+  <script src="https://unpkg.com/scrollreveal">
+
+  </script>
+      <script src="./script.js" ></script>
+      <script src="https://kit.fontawesome.com/a34b1e8191.js" crossorigin="anonymous"></script>
+    </body>
 </html>
