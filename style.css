@@ -344,10 +344,11 @@
   #services .cards{
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 3.9rem;
   }
   
   #services .card{
+    max-width: 330px;
     padding:2.4rem;
     text-align: left;
     /*border: 1px solid var(--brand-light-color);*/
