@@ -6,7 +6,7 @@
   }
   
   :root{
-    --hue:200;
+    --hue:950;
     --primary-color: hsl(var(--hue), 100%, 26%);
     --headlin-Color: hsl(210, 11%, 15%);
     --paragraph-color: hsl(210, 9%, 31%);
@@ -193,7 +193,7 @@
     font-size: 1.6rem;
     line-height: 150%;
   }
-  /*========NAVEGATION================*/
+  /*=================NAVEGATION================*/
   nav{
     display: flex;
     height:var(--nav--height);
@@ -233,7 +233,7 @@
     position: fixed;
   }
   
-  /*==========Menu-expanded=====================*/
+  /*================Menu-expanded=====================*/
   body.menu-expanded{
     overflow:hidden;
   }
@@ -420,11 +420,14 @@
     margin-bottom:6rem;
     font-size:20px;
   }
-  .col-b img{
+  #imgDiogoContato{
     width: 70%;
     height: 300px;
-    border-radius: 7px;
+    border-radius: 50%;
     
+  }
+  #imgContato{
+    border-radius: 10px;
   }
 
   /*==========CONTACT=====================*/
